@@ -17,7 +17,7 @@ class FunComp extends React.Component {
   }
 
   changeState() {
-    this.setState({ username: "bar" });
+    this.setState({ username: this.state.username == "foo" ? 'bar' : 'foo' });
   }
 
   render() {

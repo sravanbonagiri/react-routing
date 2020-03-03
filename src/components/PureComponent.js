@@ -19,7 +19,7 @@ class PureComp extends React.PureComponent {
   }
 
   changeState() {
-    this.setState({ username: "bar" });
+    this.setState({ username: this.state.username == "foo" ? 'bar' : 'foo'});
   }
 
   render() {
